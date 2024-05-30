@@ -1,22 +1,12 @@
+---
+---
+
 @import "reset";
 @import "main";
 
 .default_title {
-    background: #808080;
+	background: #c0c0c0;
 }
-
 .post_title {
-    background: #00007f;
-}
-
-.wrapper, .content {
-    width: 100%;
-    height: auto; /* Ensure they grow with content */
-}
-
-.post_list {
-    width: 90%; /* Adjust the width as needed */
-    overflow-x: auto; /* Enable horizontal scrolling if needed */
-    overflow-y: visible; /* Ensure vertical content is visible */
-    height: auto; /* Ensure the height adjusts to content */
+	background: #c0c0c0;
 }
