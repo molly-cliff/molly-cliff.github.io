@@ -15,16 +15,21 @@
     
     <!-- <link rel="stylesheet" href="/assets/css/font-awesome.min.css"> -->
     
-        <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
     <script src="/assets/js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <style>
+        .wrapper, .content {
+            width: 100%;
+            height: auto; /* Ensure they grow with content */
+        }
+
         .post_list {
-            width: 100%; /* Adjust the width as needed */
+            width: 90%; /* Adjust the width as needed */
             overflow-x: auto; /* Enable horizontal scrolling if needed */
             overflow-y: visible; /* Ensure vertical content is visible */
-    height: auto; /* Ensure the height adjusts to content */
+            height: auto; /* Ensure the height adjusts to content */
         }
     </style>
 </head>
@@ -44,9 +49,8 @@
             <ul>
                 <!-- sidebar links -->
                 {% for item in site.data.settings.menu %}
-                            <li> <a href="{{site.github.url }}{{ item.url }}"><img src="/assets/img/file.ico" width="25" height="25" title="{{ item.name }}" />{{ item.name }}</a></li>
-                  {% endfor %}
-
+                    <li> <a href="{{site.github.url }}{{ item.url }}"><img src="/assets/img/file.ico" width="25" height="25" title="{{ item.name }}" />{{ item.name }}</a></li>
+                {% endfor %}
                 <li> <a href="{{site.github.url }}/etc"><img src="/assets/img/folder.ico" width="25" height="25" title="etc" />{{"etc"}}</a></li>
             </ul>
                 </li>
@@ -54,11 +58,9 @@
         </div>
         <div class="post_list">
             <ul id='post-list'>
-              <li>
-                <p>Hello, I'm Molly a 1st year PhD Student
-                    within the Disease Dynamics Unit of the University of Cambridge. 
-                    Welcome to my website! :)</p>
-              </li>
+                <li>
+                    <p>Hello, I'm Molly a 1st year PhD Student within the Disease Dynamics Unit of the University of Cambridge. Welcome to my website! :)</p>
+                </li>
             </ul>
         </div>
     </div>
@@ -83,3 +85,4 @@
         <p>© Molly Cliff | code based on <a href="http://github.com/h01000110/h01000110.github.io" target="_blank">h01000110.github.io (hi)</a></p>
     </div>
 </body>
+</html>
