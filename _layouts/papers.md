@@ -8,3 +8,4 @@ title: Publications
 
 *Currently preparing:* 
 
+* **Cliff, M**, Jahn, S.,Bita Fouda, A., Latt A.,Lingani C., Trotter, C., Re-examining the meningitis belt: associations between environmental factors and epidemic meningitis risk across Africa
