@@ -1,5 +1,5 @@
 menu:
 - {name: 'about me', url: '/about_me'}
 - {name: 'research', url: '/research'}
-- {name: 'publications', url: '/papers'}
+- {name: 'papers', url: '/papers'}
 - {name: 'CV', url: '/CV'}
