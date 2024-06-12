@@ -3,7 +3,39 @@
 @import "main";
 
 .default_title {
-    background: #003399;
+    background: #c0c0c0;
 }
 
+.topbar {
+    background-color: #3498db; /* Replace with your desired color */
+}
+
+.post_content {
+    overflow: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    max-height: 100%; /* Ensure it doesn't overflow its container */
+}
+
+.content {
+    padding: 20px;
+    max-height: calc(100vh - 100px); /* Adjust according to your layout */
+    overflow-y: auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.default_title, .tag_list, .post_list, .footer {
+    flex-shrink: 0;
+}
+
+.content {
+    flex-grow: 1;
+    overflow-y: auto;
+}
 ---
