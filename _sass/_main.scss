@@ -128,7 +128,7 @@ ul.topbar {
 	}
 }
 .tag_list {
-	width: 28%;
+	width: 100%;
 	margin: 0 auto;
 	min-height: 150px;
 	max-height: 150px;
@@ -149,7 +149,7 @@ ul.topbar {
 	ul {
 		li {
 			max-width: 27ch;
-			overflow: hidden;
+			overflow: visible;
 			text-overflow: ellipsis;
 			white-space: nowrap;
 		}
@@ -178,7 +178,7 @@ ul.topbar {
 		padding: 1px 3px;
 	}
 	.left {
-		width: 33%;
+		width: 100%;
 		margin-left: 2px;
 	}
 	.right {
