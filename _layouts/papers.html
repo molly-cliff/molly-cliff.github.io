@@ -1,6 +1,26 @@
----
-layout: default
-title: Publications
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/papers/">Papers</a></li>
+                <!-- Add other links as necessary -->
+            </ul>
+        </div>
 
-{{ content }}
+        <!-- Main Content -->
+        <div class="main-content">
+            {{ content }}
+        </div>
+    </div>
+</body>
+</html>
