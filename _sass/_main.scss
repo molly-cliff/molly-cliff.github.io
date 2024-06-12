@@ -4,11 +4,12 @@ body {
 	font-size: 13px;
 }
 
+
 .wrapper, .content {
 	width: 800px;
 	margin: auto;
 	margin-top: 20px;
-	background: #bfb8bf;
+	background: #fef8fe;
 	border: 2px solid;
 	border-color: #fff8ff #000000 #000000 #fff8ff;
 	padding: 2px 0;
@@ -18,9 +19,10 @@ body {
 	position: relative;
 
 	h1 {
-		color: #bfb8bf;
-		font-size: 14px;
+		color: black;
+		font-size: 30px;
 		font-weight: bold;
+                font-family: 'Chicago';
 	}
 	
 	img {
@@ -32,6 +34,7 @@ body {
 }
 .post_title {
 	h1 {
+                font-family: 'Chicago';
 		display: inline-block;
 	}
 
@@ -40,7 +43,7 @@ body {
 	}
 
 	.btn {
-		background: #cccccc;
+		background: #fef8fe;
 		width: 13px;
 		height: 11px;
 		float: right;
@@ -48,7 +51,8 @@ body {
 		border-color: #fff8ff #000000 #000000 #fff8ff;
 
 		span {
-			font-size: 11px;
+			font-size: 20px;
+                        font-family: 'Chicago';
 			position: relative;
 			left: 2px;
 			top: -2px;
@@ -56,11 +60,13 @@ body {
 
 		.fa-window-minimize {
 			font-size: 10px;
+                        font-family: 'Chicago';
 			left: 1px;
 		}
 
 		.fa-window-maximize {
 			font-size: 10px;
+                        font-family: 'Chicago';
 			left: 1px;
 		}
 	}
@@ -89,7 +95,7 @@ ul.topbar {
 	}
 }
 .post_list, .tag_list, .post_content {
-	background: #fff8ff;
+	background: #fef8fe;
 	border-width: 2px;
 	border-style: ridge groove groove ridge;
 	border-color: #7f787f #fff8ff #fff8ff #7f787f;
@@ -101,6 +107,31 @@ ul.topbar {
 	max-height: 150px;
 	overflow-y: scroll;
 	display: inline-block;
+
+	ul {
+		list-style: none;
+
+		li {
+			display: inline-block;
+			margin: 10px;
+			white-space: nowrap;
+
+			img {
+				display: block;
+				margin: 0 auto;
+				margin-bottom: 8px;
+			}
+
+			a {
+				text-decoration: none;
+				color: #000000;
+			}
+		}
+	}
+}
+
+.etc_list {
+	margin: 0 auto;
 
 	ul {
 		list-style: none;
@@ -127,6 +158,7 @@ ul.topbar {
 		}
 	}
 }
+
 .tag_list {
 	width: 28%;
 	margin: 0 auto;
@@ -156,7 +188,7 @@ ul.topbar {
 	}
 }
 #tag-list {
-    background:transparent url(/assets/img/pixel-alt.png) repeat-y 15px 0;
+    background:transparent url(/assets/img/icons/pixel-alt.png) repeat-y 15px 0;
 }
 #tag-list li {
     padding:0 0 0 2px;
@@ -166,7 +198,7 @@ ul.topbar {
     display:block;
 }
 #tag-list li ul li {
-    background:transparent url(/assets/img/pixel-alt.png) repeat-x 0 8px;
+    background:transparent url(/assets/img/icons/pixel-alt.png) repeat-x 0 8px;
     margin:4px 0 4px 13px;
     padding:0 0 0 20px;
 }
@@ -207,20 +239,54 @@ ul.topbar {
 	}
 
 	h1 {
-		font-size: 20px;
+                font-family: 'Chicago';
+		font-size: 25px;
 		font-weight: 700;
 		margin: 50px 0 10px 0;
 	}
 
 	h2 {
-		font-size: 18px;
+                font-family: 'SFbold';
+		font-size: 22px;
 		font-weight: 700;
 		margin: 25px 0 5px 0;
 	}
 
-	em {
-		font-style: italic;
-	}
+        h3 {
+                font-family: 'SFbold';
+                font-size: 20px;
+                font-weight: 500;
+        }
+
+        h4 { 
+                font-family: 'SFbold';
+                font-weight: 500;
+                font-size: 20px;
+        }
+
+        h5 { 
+                font-family: 'SFbold';
+                font-weight: 500;
+                font-size: 20px;
+        }
+
+        h6 { 
+                font-family: 'SFbold';
+                font-weight: 500;
+                font-size: 20px;
+        }
+
+        b, strong {
+                font-family: 'SFbold';
+        }
+
+        em, i {
+                font-style: italic;
+        }
+        
+        code{
+                font-family: 'SFmono';
+        }
 
 	blockquote {
 		padding: 0 0 0 15px;
@@ -291,6 +357,143 @@ ul.topbar {
 		text-align: center;
 
 		a {
+			color: #24244a;
+		}
+	}
+}
+
+@media only screen and (max-width: 900px) {
+    .content {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .content {
+        width: 90%;
+    }
+	.post_content {
+		width: 98%;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.post_content {
+		width: 97%;
+	}
+}
+@media only screen and (max-width: 810px) {
+	.wrapper {
+		width: 90%;
+	}
+	.post_total {
+		.left {
+			width: 37%;
+		}
+		.right {
+			float: right;
+			width: 60%;
+		}
+	}
+}
+@media only screen and (max-width: 750px) {
+	.tag_list {
+		width: 99%;
+	}
+	.post_list {
+		width: 99%;
+		float: left;
+	}
+	.post_total {
+		.left {
+			width: 36%;
+		}
+		.right {
+			float: right;
+			width: 60%;
+		}
+	}
+}
+@media only screen and (max-width: 610px) {
+	.tag_list {
+		width: 98.7%;
+	}
+	.post_list {
+		width: 98.7%;
+		float: left;
+	}
+	.post_total {
+		.left {
+			width: 35.7%;
+		}
+	}
+}
+@media only screen and (max-width: 520px) {
+	.post_total {
+		.left {
+			width: 34.5%;
+		}
+	}
+}
+@media only screen and (max-width: 410px) {
+	.post_total {
+		.left {
+			width: 34%;
+		}
+	}
+}
+@media only screen and (max-width: 375px) {
+	.post_total {
+		.left {
+			width: 33%;
+		}
+	}
+}
+::-webkit-scrollbar {
+      width: 16px;
+} /* this targets the default scrollbar (compulsory) */
+::-webkit-scrollbar-track {
+	background-image: url("/assets/img/track.png");
+	background-repeat: repeat-x repeat-y;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+	background-color: #cccccc;
+	border-width: 2px;
+	border-style: groove ridge ridge groove;
+	border-color: #fff8ff #000000 #000000 #fff8ff;
+} /* this will style the thumb, ignoring the track */
+ 
+::-webkit-scrollbar-button {
+	background-color: #cccccc;
+	border-width: 2px;
+	border-style: groove ridge ridge groove;
+	border-color: #fff8ff #000000 #000000 #fff8ff;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	&:vertical:decrement {
+		background-image: url("/assets/img/icons/up.png");
+	}
+
+	&:vertical:increment {
+		background-image: url("/assets/img/icons/down.png");
+	}
+
+	&:horizontal:decrement {
+		background-image: url("/assets/img/icons/left.png");
+	}
+
+	&:horizontal:increment {
+		background-image: url("/assets/img/icons/right.png");
+	}
+
+	&:active {
+		background-position: 1px 2px;
+	}
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+::-webkit-scrollbar-corner {
+	background-color: #cacaca;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
 			color: #24244a;
 		}
 	}
