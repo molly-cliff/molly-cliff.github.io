@@ -1,5 +1,4 @@
-test
-
-test
-test
-test
+---
+layout: papers
+title: Publications
+---
