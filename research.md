@@ -1,5 +1,5 @@
 ---
-layout: research_page
+layout: research
 title: Research
 ---
 
