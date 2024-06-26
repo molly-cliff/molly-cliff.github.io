@@ -11,7 +11,6 @@ This paper is a correspondence piece examining the relationship between displace
 Our paper has suggested new research strategies to quantify the pneumococcal burden within displaced populations focusing on the use of catch-up campaigns complemented by routine carriage. We are aiming for this paper to serve as a guide to government agencies, local populations, and nongovernmental organizations (NGOs) encouraging collaborative work to strengthen pneumococcal surveillance and guide action in humanitarian emergencies.
 
 **Cliff, M.**, Welaga, P., Mohammed, N., Ansah, P., Heyderman, R. S., Trotter, C., & Kwambana-Adams, B. (2024). Strategies for controlling pneumococcal disease and outbreaks during humanitarian emergencies. Nature Medicine, 1–2. https://doi.org/10.1038/s41591-024-02922-x
-
 # **Currently working on**
 
 **Cliff, M.**, Jahn, S., Bita Fouda, A., Latt, A., Lingani, C., Trotter, C., Re-examining the meningitis belt: associations between environmental factors and epidemic meningitis risk across Africa
