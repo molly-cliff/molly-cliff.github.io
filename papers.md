@@ -2,7 +2,7 @@
 layout: papers
 title: Publications
 ---
-**Strategies for controlling pneumococcal disease and outbreaks during humanitarian emergencies**
+# **Strategies for controlling pneumococcal disease and outbreaks during humanitarian emergencies**
 
 ![image](https://github.com/molly-cliff/molly-cliff.github.io/assets/108263895/21cdb712-a7bd-4ddd-91d9-c0bd727d8d39)
 
@@ -12,6 +12,6 @@ Our paper has suggested new research strategies to quantify the pneumococcal bur
 
 **Cliff, M.**, Welaga, P., Mohammed, N., Ansah, P., Heyderman, R. S., Trotter, C., & Kwambana-Adams, B. (2024). Strategies for controlling pneumococcal disease and outbreaks during humanitarian emergencies. Nature Medicine, 1–2. https://doi.org/10.1038/s41591-024-02922-x
 
-**Currently working on**
+# **Currently working on**
 
 **Cliff, M.**, Jahn, S., Bita Fouda, A., Latt, A., Lingani, C., Trotter, C., Re-examining the meningitis belt: associations between environmental factors and epidemic meningitis risk across Africa
