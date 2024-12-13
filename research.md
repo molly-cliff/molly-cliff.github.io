@@ -3,5 +3,6 @@ layout: research
 title: Research
 ---
 
-**Logistic regression of environmental risk factors across Africa**
+**Bacterial meningitis and climate change**
 
+Within my PhD I aim to examine the potential impact of climate change on both the geography and incidence of bacterial meningitis
