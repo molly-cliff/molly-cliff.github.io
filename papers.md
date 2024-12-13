@@ -14,3 +14,4 @@ Our paper has suggested new research strategies to quantify the pneumococcal bur
 # **Currently working on**
 
 **Cliff, M.**, Jahn, S., Bita Fouda, A., Latt, A., Lingani, C., Trotter, C., Re-examining the meningitis belt: associations between environmental factors and epidemic meningitis risk across Africa
+Welaga, P.,**Cliff, M.**, Mohammed, N., Ansah, P., Heyderman, R. S., Trotter, C., & Kwambana-Adams, B. Pneumococcal carriage and disease studies in the African Meningitis Belt between 2000- 2020: A systematic review
