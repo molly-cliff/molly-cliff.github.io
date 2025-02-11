@@ -1,0 +1,26 @@
+project:
+type: website
+output-dir: docs
+
+website:
+  title: "Molly Cliff"
+  navbar:
+  left:
+  -href: index.qmd
+  text: home
+  page-footer:
+  center: 
+  "Molly Cliff"
+  right:
+  - icon: envelope
+  href: mailto:mvc32@cam.ac.uk
+  - icon: github
+  href: https://github.com/molly-cliff
+
+  format:
+  html:
+  theme:
+  - cosmo
+  - custom.scss
+  css: styles.css
+  toc: true
