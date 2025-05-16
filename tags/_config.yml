@@ -1,0 +1,24 @@
+url: molly-cliff.github.io
+
+# variables
+name: Molly Cliff
+description: my website :-)
+google_verification: null
+
+
+# File management
+include: [".htaccess"]
+exclude: ["README.md", "LICENSE"]
+
+# Sass
+sass:
+  style: :compressed
+  sass_dir: _sass
+
+# Markdown
+markdown: kramdown
+kramdown:
+    input: GFM
+    parse_block_html: true
+    syntax_highlighter_opts:
+      disable : true
