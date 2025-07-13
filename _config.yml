@@ -1,6 +1,11 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
-theme: jekyll-theme-minimal
+title: Your Site Title
+description: >-
+  A simple Jekyll site using the minimal theme on GitHub Pages.
+theme: minimal
+url: "https://molly-cliff.github.io" # Replace with your GitHub Pages URL if different
+baseurl: "" # Leave blank if you're publishing to the root (recommended)
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jemoji
