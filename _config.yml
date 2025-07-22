@@ -1,10 +1,8 @@
-permalink: /:year:month:day/:title
-url: #Your url here
-baseurl: /project
+url: molly-cliff.github.io
 
 # variables
-name: Your Site Name
-description: Your description here
+name: mol
+description: test
 google_verification: null
 
 
@@ -20,6 +18,7 @@ sass:
 # Markdown
 markdown: kramdown
 kramdown:
-  input: GFM
-  syntax_highlighter_opts:
-    disable : true
+    input: GFM
+    parse_block_html: true
+    syntax_highlighter_opts:
+      disable : true
