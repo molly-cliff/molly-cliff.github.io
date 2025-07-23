@@ -207,7 +207,7 @@ ul.topbar {
 	}
 }
 #tag-list {
-    background:transparent url(/assets/img/icons/pixel-alt.png) repeat-y 15px 0;
+    background:transparent url(/assets/img/pixel-alt.png) repeat-y 15px 0;
 }
 #tag-list li {
     padding:0 0 0 2px;
@@ -217,7 +217,7 @@ ul.topbar {
     display:block;
 }
 #tag-list li ul li {
-    background:transparent url(/assets/img/icons/pixel-alt.png) repeat-x 0 8px;
+    background:transparent url(/assets/img/pixel-alt.png) repeat-x 0 8px;
     margin:4px 0 4px 13px;
     padding:0 0 0 20px;
 }
@@ -490,19 +490,19 @@ ul.topbar {
 	background-repeat: no-repeat;
 
 	&:vertical:decrement {
-		background-image: url("/assets/img/icons/up.png");
+		background-image: url("/assets/img/up.png");
 	}
 
 	&:vertical:increment {
-		background-image: url("/assets/img/icons/down.png");
+		background-image: url("/assets/img/down.png");
 	}
 
 	&:horizontal:decrement {
-		background-image: url("/assets/img/icons/left.png");
+		background-image: url("/assets/img/left.png");
 	}
 
 	&:horizontal:increment {
-		background-image: url("/assets/img/icons/right.png");
+		background-image: url("/assets/img/right.png");
 	}
 
 	&:active {
