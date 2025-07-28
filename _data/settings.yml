@@ -5,4 +5,4 @@ menu:
 - {name: 'CV', url: '/mcliff_CV'}
 
 etc:
-- {name: 'test', url: '/test'}
+- {name: 'etc', url: '/etc'}
