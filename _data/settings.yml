@@ -4,5 +4,4 @@ menu:
 - {name: 'publications', url: '/papers'}
 - {name: 'CV', url: '/mcliff_CV'}
 
-etc:
-- {name: 'etc', url: '/etc'}
+
