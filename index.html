@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr. Jane Doe — Researcher in Example Studies</title>
+  <meta name="description" content="Academic home page for Dr. Jane Doe — research, publications, teaching, contact.">
+  <style>
+    :root{--max-width:900px;--accent:#2b6cb0;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.6;margin:0;color:#111;padding:1rem;background:#f7fafc}
+    .site{max-width:var(--max-width);margin:0 auto;background:#fff;padding:2rem;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    header{display:flex;gap:1rem;align-items:center}
+    .photo{width:96px;height:96px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#6b46c1);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    h1{margin:.1rem 0;font-size:1.6rem}
+    p.role{margin:0;color:var(--muted)}
+    nav{margin-top:1rem;border-top:1px solid #eef2f7;padding-top:1rem}
+    nav a{margin-right:1rem;color:var(--accent);text-decoration:none}
+    main{margin-top:1.25rem}
+    .grid{display:grid;grid-template-columns:1fr;gap:1.25rem}
+    @media(min-width:720px){.grid{grid-template-columns:2fr 1fr}}
+    .card{padding:1rem;border-radius:8px;background:#fff;border:1px solid #f1f5f9}
+    h2{margin:.25rem 0}
+    ul.pub-list{padding-left:1rem;margin:0}
+    footer{margin-top:1.5rem;font-size:.9rem;color:var(--muted)}
+    .btn{display:inline-block;padding:.45rem .7rem;border-radius:8px;background:var(--accent);color:white;text-decoration:none}
+    address{font-style:normal}
+  </style>
+</head>
+<body>
+  <div class="site">
+    <header>
+      <div class="photo" aria-hidden="true">JD</div>
+      <div>
+        <h1>Dr. Jane Doe</h1>
+        <p class="role">Senior Researcher — Example University</p>
+        <p style="margin:.25rem 0">Research interests: machine learning for social good, causal inference, reproducible science.</p>
+        <nav aria-label="Primary navigation">
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card" id="research">
+        <h2>Research</h2>
+        <p>I work on applying machine learning methods to societally important problems with a focus on interpretability and robustness. Current projects include:</p>
+        <ul>
+          <li>Fairness-aware recommender systems</li>
+          <li>Robust causal discovery from observational data</li>
+          <li>Open-source tools for reproducible experiments</li>
+        </ul>
+        <p><a class="btn" href="#publications">Selected publications</a> <a style="margin-left:.5rem;text-decoration:none" href="cv.pdf" download>Download CV (PDF)</a></p>
+      </section>
+
+      <aside class="card" id="contact">
+        <h2>Contact</h2>
+        <address>
+          Dr. Jane Doe<br>
+          Example University — Department of Examples<br>
+          Email: <a href="mailto:jane.doe@example.edu">jane.doe@example.edu</a>
+        </address>
+        <p style="margin-top:.5rem">Twitter: <a href="https://twitter.com/example" target="_blank" rel="noopener">@example</a></p>
+      </aside>
+
+      <section class="card" id="publications">
+        <h2>Selected publications</h2>
+        <ol class="pub-list">
+          <li><strong>Doe, J.</strong> (2024). Example paper title. <em>Journal of Examples</em>. <a href="#">PDF</a> • <a href="#">BibTeX</a></li>
+          <li><strong>Doe, J.</strong>, &amp; Smith, A. (2023). Another paper. <em>Conference on Illustrations</em>. <a href="#">PDF</a></li>
+          <li><strong>Doe, J.</strong> (2021). Earlier work on methods. <em>Transactions on Sample Studies</em>.</li>
+        </ol>
+      </section>
+
+      <section class="card" id="teaching">
+        <h2>Teaching</h2>
+        <p>Courses taught (selected):</p>
+        <ul>
+          <li>CS 123 — Introduction to Machine Learning</li>
+          <li>CS 456 — Causal Inference for Data Science</li>
+        </ul>
+        <p>Office hours and course materials: <a href="#">Course page</a></p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>License: Content on this page is provided under a Creative Commons Attribution 4.0 license.</p>
+      <p>Source: <small>Template generated</small></p>
+    </footer>
+  </div>
+</body>
+</html>
