@@ -1,95 +1,193 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Molly Cliff</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
   <style>
     :root {
---max-width: 850px;
-  --accent: #2f855a;       /* deep green */
-  --accent-light: #e6fffa; /* pale mint background */
-  --muted: #4a5568;        /* grey-green for text */
-  --bg: #f0fff4;  
+      --max-width: 850px;
+      --accent: #76c7b7;        /* minty green */
+      --accent-light: #e9f8f5;  /* pale mint background */
+      --soft-pink: #ffe8ec;     /* gentle pink highlight */
+      --text: #2f2f2f;
+      --muted: #6b7280;
+      --bg: #fafafa;
     }
-    * { box-sizing: border-box; }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-     font-family: 'Merriweather', serif;
+      font-family: 'Quicksand', sans-serif;
       background: var(--bg);
       margin: 0;
       padding: 1.5rem;
-      color: #222;
+      color: var(--text);
     }
+
     .site {
       max-width: var(--max-width);
       margin: 0 auto;
       background: #fff;
-      border-radius: 20px;
-      padding: 2.5rem;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+      border-radius: 24px;
+      padding: 3rem 2.5rem;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+      transition: box-shadow 0.3s ease;
     }
+
+    .site:hover {
+      box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+    }
+
     header {
       text-align: center;
+      margin-bottom: 2rem;
     }
+
     .photo {
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent), #a78bfa);
+      background: linear-gradient(135deg, var(--accent), var(--soft-pink));
       margin: 0 auto 1rem;
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
+      font-family: 'Playfair Display', serif;
       font-weight: 700;
-      font-size: 1.5rem;
+      font-size: 1.7rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
+
     h1 {
-      font-size: 1.9rem;
-      margin-bottom: .2rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.1rem;
+      margin-bottom: 0.3rem;
+      color: var(--accent);
     }
-    p.role { color: var(--muted); margin: 0 0 1rem; }
+
+    p.role {
+      color: var(--muted);
+      margin: 0 0 1.5rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
     nav a {
       text-decoration: none;
       color: var(--accent);
-      margin: 0 .6rem;
-      font-weight: 500;
+      margin: 0 .8rem;
+      font-weight: 600;
+      position: relative;
     }
-    nav a:hover { text-decoration: underline; }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 100%;
+      height: 2px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transition: transform 0.25s ease;
+      transform-origin: right;
+    }
+
+    nav a:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
     main {
       margin-top: 2rem;
       display: grid;
-      gap: 1.5rem;
+      gap: 1.8rem;
     }
+
     section {
       background: var(--accent-light);
-      padding: 1.5rem;
-      border-radius: 14px;
+      padding: 1.7rem;
+      border-radius: 16px;
+      transition: background 0.3s ease;
     }
-    h2 { margin-top: 0; color: var(--accent); }
+
+    section:hover {
+      background: var(--soft-pink);
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      margin-top: 0;
+      color: var(--accent);
+      font-size: 1.4rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.7rem;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    a:hover {
+      color: #5ba89c;
+    }
+
+    .btn {
+      background: var(--accent);
+      color: white;
+      padding: .6rem 1rem;
+      border-radius: 12px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: .8rem;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #5ba89c;
+    }
+
     footer {
       text-align: center;
       font-size: 0.9rem;
       color: var(--muted);
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
-    .btn {
-      background: var(--accent);
-      color: white;
-      padding: .5rem .8rem;
-      border-radius: 10px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: .5rem;
+
+    @media (max-width: 600px) {
+      .site {
+        padding: 2rem 1.2rem;
+      }
+      nav a {
+        margin: 0 .4rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="site">
     <header>
-      <div class="photo" aria-hidden="true">JD</div>
+      <div class="photo" aria-hidden="true">MC</div>
       <h1>Molly Cliff</h1>
+      <p class="role">PhD Student • University of Cambridge</p>
       <nav>
         <a href="#about">About</a>
         <a href="#research">Research</a>
@@ -101,40 +199,40 @@
     <main>
       <section id="about">
         <h2>About</h2>
-        <p> I’m Molly, a second year PhD student at the University of Cambridge, investigating the potential impact of climate change on the distribution and
-         of bacterial meningitis. My research uses statisical and geospatial methods to understand how varying climatic factors can effect the risk of outbreak occurance</p>
-        <p> I hope to use my background in infectious disease epidemiology to support global public health programs, focusing on the integration of research into public health practic
-        <p>When I'm not coding I enjoy rock climbing as well as making art and listening to music.</p>
+        <p>I’m Molly, a second-year PhD student at the University of Cambridge, investigating the potential impact of climate change on the distribution of bacterial meningitis. My research uses statistical and geospatial methods to understand how varying climatic factors can affect the risk of outbreak occurrence.</p>
+        <p>I hope to use my background in infectious disease epidemiology to support global public health programs, focusing on integrating research into real-world practice.</p>
+        <p>When I'm not coding, I enjoy rock climbing, making art, and listening to music.</p>
       </section>
 
       <section id="research">
         <h2>Research</h2>
-        <p>I study machine learning and data science applications for social good, emphasizing interpretability, fairness, and causal reasoning. Current projects include:</p>
-        <ul>
-          <li>Fairness-aware recommender systems</li>
-          <li>Robust causal discovery from observational data</li>
-          <li>Open-source tools for reproducible experiments</li>
-        </ul>
-        <a class="btn" href="#publications">View publications</a>
+        <p>Exploring how environmental and climatic factors influence infectious disease patterns, particularly bacterial meningitis, across Africa.</p>
+        <a class="btn" href="#publications">View Publications</a>
       </section>
 
       <section id="publications">
-        <h2>Selected Publications</h2>
-        <ol>
-          <li><strong>Doe, J.</strong> (2024). Example paper title. <em>Journal of Examples</em>. <a href="#">PDF</a> • <a href="#">BibTeX</a></li>
-          <li><strong>Doe, J.</strong>, &amp; Smith, A. (2023). Another paper. <em>Conference on Illustrations</em>. <a href="#">PDF</a></li>
-          <li><strong>Doe, J.</strong> (2021). Earlier work on methods. <em>Transactions on Sample Studies</em>.</li>
-        </ol>
+        <h2>Publications</h2>
+        <ul>
+          <li><strong>Cliff, M.</strong>, Jahn, S., Fouda, A., Latt, A., Lingani, C., & Trotter, C. (Accepted). <em>Updating the meningitis belt</em>. <a href="https://wellcomeopenresearch.org/articles/10-497/v1" target="_blank">Wellcome Open Research</a></li>
+          <li>Willgert, K., <strong>Cliff, M.</strong>, Meinke, S., Messina, D., Broom, D. M., Wood, J., Conlan, A. J. K., & Joshua, K. (2025). <em>Transboundary and Emerging Diseases</em>. <a href="https://doi.org/10.1155/tbed/6541298" target="_blank">DOI</a></li>
+          <li><strong>Cliff, M.</strong> et al. (2024). <em>Strategies for controlling pneumococcal disease and outbreaks during humanitarian emergencies</em>. <em>Nature Medicine</em>, 30(6), 1515–1516.</li>
+        </ul>
+
+        <h2>In Preparation</h2>
+        <ul>
+          <li><strong>Cliff, M.</strong> et al. How do climatic factors directly influence the incidence and risk of meningococcal meningitis across the African meningitis belt? A narrative literature review.</li>
+          <li>Welaga, P., <strong>Cliff, M.</strong> et al. Pneumococcal carriage and disease studies in the African Meningitis Belt between 2000–2020: A systematic review.</li>
+        </ul>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:jane.doe@example.edu">jane.doe@example.edu</a></p>
+        <p>Email: <a href="mailto:mvc32@cam.ac.uk">mvc32@cam.ac.uk</a></p>
       </section>
     </main>
 
     <footer>
-      <p>© 2025 Jane Doe • Licensed under CC BY 4.0</p>
+      <p>© 2025 Molly Cliff • Licensed under CC BY 4.0</p>
     </footer>
   </div>
 </body>
