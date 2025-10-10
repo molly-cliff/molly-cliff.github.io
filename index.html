@@ -6,7 +6,7 @@
   <title>Molly Cliff</title>
 
   <!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 
   <style>
     :root {
@@ -60,18 +60,17 @@
       color: var(--accent);
     }
 
-    p.role {
-      color: var(--muted);
-      margin: 0.3rem 0 1rem;
-    }
-
-
     nav a {
       text-decoration: none;
       color: var(--accent);
       margin-right: 1.2rem;
       font-weight: 700;
       font-size: 1.05rem; 
+      cursor: pointer;
+    }
+
+    nav a.active {
+      text-decoration: underline;
     }
 
     nav a:hover {
@@ -91,28 +90,27 @@
     }
 
     main {
-      display: grid;
+      display: block;
       gap: 2rem;
     }
 
     section {
       border-top: 1px solid var(--border);
       padding-top: 1.5rem;
+      display: none;
     }
 
-    section:first-of-type {
-      border-top: none;
-      padding-top: 0;
+    section.active {
+      display: block;
     }
 
-    /* Bigger section headings */
     h2 {
       font-size: 1.35rem;
       color: var(--accent);
       margin-bottom: 0.8rem;
     }
 
-    p {
+    p, li {
       margin-bottom: 1rem;
     }
 
@@ -121,16 +119,8 @@
       margin: 0;
     }
 
-    li {
-      margin-bottom: 0.8rem;
-    }
-
     a {
       color: var(--accent);
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
 
     footer {
@@ -141,7 +131,6 @@
       font-size: 0.8rem;
       color: var(--muted);
     }
-
 
     @media (max-width: 700px) {
       header {
@@ -167,21 +156,21 @@
       <div class="intro">
         <h1>Molly Cliff</h1>
         <nav>
-          <a href="#about">About</a>
-          <a href="#research">Research</a>
-          <a href="#publications">Publications</a>
-          <a href="#contact">Contact</a>
+          <a href="#about" class="tab-link" data-tab="about">About</a>
+          <a href="#research" class="tab-link" data-tab="research">Research</a>
+          <a href="#publications" class="tab-link" data-tab="publications">Publications</a>
+          <a href="#contact" class="tab-link" data-tab="contact">Contact</a>
         </nav>
       </div>
       <div class="photo" title="Molly Cliff photo"></div>
     </header>
 
     <main>
-      <section id="about">
+      <section id="about" class="active">
         <h2>About Me</h2>
         <p>I’m Molly, a second-year PhD student in the Vet Med department at the University of Cambridge.
           My research uses statistical and geospatial methods to investigate the potential impact of climate change on the distribution of bacterial meningitis across Africa.</p>
-       <p> Before starting my PhD I worked as an Epidemiology and Information Analyst within the UK Health Security Agency Field Service on a wide variety of communicable disease outbreaks.
+        <p>Before starting my PhD I worked as an Epidemiology and Information Analyst within the UK Health Security Agency Field Service on a wide variety of communicable disease outbreaks.
         Through this I undertook a secondment with the WHO working as an epidemiologist on the monkeypox outbreak within Europe.
         I hope to use my background in infectious disease epidemiology to support global public health programs, focusing on integrating research into practice.</p>
         <p>Outside of research, I enjoy rock climbing, making art, and listening to music.</p>
@@ -189,17 +178,17 @@
 
       <section id="research">
         <h2>Research</h2>
-        <p> My PhD project investigates the potential impact of climate change on the distribution and incidence of bacterial meningitis, focusing on meningococcal meningitis across Africa.
-          As part of this, I have developed a predictive geographic model that estimates meningitis outbreak risk across Africa using temporal climate variables, updating exisiting risk mapping.
-          Building on this, I am now using R-INLA to evaluate this relationship over space and time both at a country and continental level. I am aiming to use the models I am currently developing 
-         to estimate the future risk of meningitis outbreaks across Africa using Global Circulation Models (GCMs) across different climatic scenarios.
-          </p>
+        <p>My PhD project investigates the potential impact of climate change on the distribution and incidence of bacterial meningitis, focusing on meningococcal meningitis across Africa.
+        As part of this, I have developed a predictive geographic model that estimates meningitis outbreak risk across Africa using temporal climate variables, updating existing risk mapping.
+        Building on this, I am now using R-INLA to evaluate this relationship over space and time both at a country and continental level. I am aiming to use the models I am currently developing 
+        to estimate the future risk of meningitis outbreaks across Africa using Global Circulation Models (GCMs) across different climatic scenarios.
+        </p>
       </section>
 
       <section id="publications">
         <h2>Publications</h2>
         <ul>
-          <li><strong>Cliff, M.</strong>, Jahn, S., Fouda, A., Latt, A., Lingani, C., & Trotter, C. (2025).<strong> (Accepted for public peer review)</strong>. <em>Updating the meningitis belt: Associations between environmental factors and epidemic meningitis risk across Africa.</em> <a href="https://wellcomeopenresearch.org/articles/10-497/v1" target="_blank">Wellcome Open Research</a>.</li>
+          <li><strong>Cliff, M.</strong>, Jahn, S., Fouda, A., Latt, A., Lingani, C., & Trotter, C. (2025). <strong>(Accepted for public peer review)</strong>. <em>Updating the meningitis belt: Associations between environmental factors and epidemic meningitis risk across Africa.</em> <a href="https://wellcomeopenresearch.org/articles/10-497/v1" target="_blank">Wellcome Open Research</a>.</li>
           <li>Willgert, K., <strong>Cliff, M.</strong>, Meinke, S., Messina, D., Broom, D. M., Wood, J.,  Conlan, A. J. K., & Joshua, K. (2025). <em>Burden of Bovine Tuberculosis on Animal Health, Welfare and Production: A Systematic Review</em>. <a href="https://doi.org/10.1155/tbed/6541298" target="_blank">Transboundary and Emerging Diseases</a>.</li>
           <li><strong>Cliff, M.</strong> Welaga, P., Mohammed, N., Ansah, P., Heyderman, R. S., Trotter, C., & Kwambana-Adams, B. (2024). <em>Strategies for controlling pneumococcal disease and outbreaks during humanitarian emergencies</em>.<a href="https://www.nature.com/articles/s41591-024-02922-x" target="_blank">Nature Medicine</a>.</li> 
         </ul>
@@ -214,10 +203,10 @@
       <section id="contact">
         <h2>Links & Contact</h2>
         <p>Email: <a href="mailto:mvc32@cam.ac.uk">mvc32@cam.ac.uk</a></p>
-         <p><a href="https://github.com/molly-cliff">Github</a></p>
-            <p><a href="https://orcid.org/0009-0008-1270-7536">ORCID</a></p>
-            <p><a href="https://scholar.google.com/citations?user=UGw6PoEAAAAJ&hl=en">Google Scholar</a></p>
-            <p><a href="https://www.linkedin.com/in/mollycliff/">Linkedin</a></p>
+        <p><a href="https://github.com/molly-cliff">Github</a></p>
+        <p><a href="https://orcid.org/0009-0008-1270-7536">ORCID</a></p>
+        <p><a href="https://scholar.google.com/citations?user=UGw6PoEAAAAJ&hl=en">Google Scholar</a></p>
+        <p><a href="https://www.linkedin.com/in/mollycliff/">Linkedin</a></p>
       </section>
     </main>
 
@@ -225,8 +214,28 @@
       <p>© 2025 Molly Cliff • Licensed under CC BY 4.0</p>
     </footer>
   </div>
-</body>
-</html>
 
+  <script>
+    const tabLinks = document.querySelectorAll('.tab-link');
+    const tabContents = document.querySelectorAll('main section');
+
+    tabLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+
+        const target = link.dataset.tab;
+
+        tabLinks.forEach(l => l.classList.remove('active'));
+        tabContents.forEach(c => c.classList.remove('active'));
+
+        link.classList.add('active');
+        document.getElementById(target).classList.add('active');
+      });
+    });
+
+    // Set first tab active on load
+    tabLinks[0].classList.add('active');
+    tabContents[0].classList.add('active');
+  </script>
 </body>
 </html>
