@@ -11,10 +11,10 @@
   <style>
     :root {
       --max-width: 850px;
-      --accent: #24450B;          /* deep sage green */
+      --accent: #24450B;         
       --muted: #555;
-      --bg: #D8D8F6;              /* light neutral background */
-      --border: #8F8FE1;          /* soft gray divider */
+      --bg: #D8D8F6;           
+      --border: #8F8FE1;        
     }
 
     * { box-sizing: border-box; }
@@ -54,7 +54,6 @@
       min-width: 250px;
     }
 
-    /* Larger heading at the top */
     h1 {
       font-size: 2.4rem;
       margin: 0 0 0.3rem;
@@ -66,20 +65,19 @@
       margin: 0.3rem 0 1rem;
     }
 
-    /* Make nav text bigger and more in line with the photo */
+
     nav a {
       text-decoration: none;
       color: var(--accent);
       margin-right: 1.2rem;
       font-weight: 700;
-      font-size: 1.05rem; /* increased from 0.8rem */
+      font-size: 1.05rem; 
     }
 
     nav a:hover {
       text-decoration: underline;
     }
 
-    /* Larger photo */
     .photo {
       width: 160px;
       height: 160px;
@@ -89,7 +87,7 @@
       flex-shrink: 0;
       background-size: cover;
       background-position: center;
-      background-image: url('me.jpg'); /* Replace with your actual image file */
+      background-image: url('me.jpg'); 
     }
 
     main {
@@ -135,7 +133,6 @@
       text-decoration: underline;
     }
 
-    /* Smaller footer text */
     footer {
       border-top: 1px solid var(--border);
       margin-top: 2.5rem;
@@ -145,7 +142,7 @@
       color: var(--muted);
     }
 
-    /* Responsive layout for smaller screens */
+
     @media (max-width: 700px) {
       header {
         flex-direction: column;
@@ -159,7 +156,7 @@
       }
 
       nav a {
-        font-size: 0.95rem; /* slightly smaller on mobile */
+        font-size: 0.95rem;
       }
     }
   </style>
