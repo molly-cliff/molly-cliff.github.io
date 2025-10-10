@@ -4,13 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Molly Cliff</title>
+
+  <!-- Optional Favicon -->
+  <!-- To add a favicon, place your file in the same directory and uncomment the line below -->
+  <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+
   <style>
     :root {
       --max-width: 850px;
-      --accent: #41521F;          /* deep sage green */
+      --accent: #24450B;          /* deep sage green */
       --muted: #555;
-      --bg: #F4FEC1;              /* light neutral background */
-      --border: #D8D8F6;          /* soft gray divider */
+      --bg: #D8D8F6;              /* light neutral background */
+      --border: #8F8FE1;          /* soft gray divider */
     }
 
     * { box-sizing: border-box; }
@@ -50,8 +55,9 @@
       min-width: 250px;
     }
 
+    /* Larger heading at the top */
     h1 {
-      font-size: 1.4rem;
+      font-size: 2rem;
       margin: 0 0 0.3rem;
       color: var(--accent);
     }
@@ -66,7 +72,7 @@
       color: var(--accent);
       margin-right: 1rem;
       font-weight: 700;
-      font-size: 0.7rem;
+      font-size: 0.8rem;
     }
 
     nav a:hover {
@@ -77,13 +83,14 @@
     .photo {
       width: 120px;
       height: 120px;
-      background: #dfe8e4; /* neutral gray-green placeholder */
+      background: #dfe8e4;
       border: 1px solid var(--border);
       border-radius: 6px;
       flex-shrink: 0;
       background-size: cover;
       background-position: center;
-      background-image: url('https://via.placeholder.com/120'); /* replace with your photo */
+      /* Use local JPG instead of online placeholder */
+      background-image: url('molly-cliff.jpg'); /* Replace with your actual image file */
     }
 
     main {
@@ -101,8 +108,9 @@
       padding-top: 0;
     }
 
+    /* Bigger section headings */
     h2 {
-      font-size: 1.15rem;
+      font-size: 1.35rem;
       color: var(--accent);
       margin-bottom: 0.8rem;
     }
@@ -128,12 +136,13 @@
       text-decoration: underline;
     }
 
+    /* Smaller footer text */
     footer {
       border-top: 1px solid var(--border);
       margin-top: 2.5rem;
       padding-top: 1.2rem;
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 0.8rem;
       color: var(--muted);
     }
 
@@ -179,8 +188,7 @@
       <section id="publications">
         <h2>Publications</h2>
         <ul>
-          <li><strong>Cliff, M.</strong>, Jahn, S., Fouda, A., Latt, A., Lingani, C., & Trotter, C. (Accepted for public peer review). <em>). Updating the meningitis belt: Associations
-between environmental factors and epidemic meningitis risk across Africa.</em>. <a href="https://wellcomeopenresearch.org/articles/10-497/v1" target="_blank">Wellcome Open Research</a>.</li>
+          <li><strong>Cliff, M.</strong>, Jahn, S., Fouda, A., Latt, A., Lingani, C., & Trotter, C. (Accepted for public peer review). <em>Updating the meningitis belt: Associations between environmental factors and epidemic meningitis risk across Africa.</em> <a href="https://wellcomeopenresearch.org/articles/10-497/v1" target="_blank">Wellcome Open Research</a>.</li>
           <li>Willgert, K., <strong>Cliff, M.</strong>, Meinke, S., Messina, D., Broom, D. M., Wood, J.,  Conlan, A. J. K., & Joshua, K. (2025). <em>Transboundary and Emerging Diseases</em>. <a href="https://doi.org/10.1155/tbed/6541298" target="_blank">DOI</a>.</li>
           <li><strong>Cliff, M.</strong> et al. (2024). <em>Strategies for controlling pneumococcal disease and outbreaks during humanitarian emergencies</em>. <em>Nature Medicine</em>, 30(6), 1515–1516.</li>
         </ul>
@@ -193,7 +201,7 @@ between environmental factors and epidemic meningitis risk across Africa.</em>. 
       </section>
 
       <section id="contact">
-        <h2> Links & Contact</h2>
+        <h2>Links & Contact</h2>
         <p>Email: <a href="mailto:mvc32@cam.ac.uk">mvc32@cam.ac.uk</a></p>
       </section>
     </main>
@@ -204,4 +212,3 @@ between environmental factors and epidemic meningitis risk across Africa.</em>. 
   </div>
 </body>
 </html>
-
